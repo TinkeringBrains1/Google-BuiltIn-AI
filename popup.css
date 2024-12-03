@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.chatbot-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.greeting {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #333;
+  border-top: 1px solid #444;
+  position: relative;
+  width: 100%;
+  align-items: center; /* Center vertically */
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  color: white;
+  background-color: #222;
+  border: none;
+  outline: none;
+}
+
+.send-icon {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 7.5px; /* Added margin for better spacing */
+  margin-right: 15px;
+}
+
+.send-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+#new-chat-button {
+  /* Style the new chat button */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#new-chat-button img {
+  width: 20px;
+  height: 20px;
+}
+
+#menu-button {
+  background-color: transparent; /* Remove background color */
+  border: none;
+  padding: 0; /* Adjust padding as needed */
+}
+
+#menu-button img {
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#chat-container {
+  flex: 1; /* Makes the chat container take the remaining space */
+  overflow-y: auto; /* Enables scrolling */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #000;
+}
+
+.bot {
+  background-color: #555;
+  color: white;
+  align-self: flex-start;
+}
+
+.user {
+  background-color: #ddd;
+  align-self: flex-end;
+}
+
+
+
+
+
+#settings-dropdown {
+  display: none;
+  position:fixed ;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 10px;
+  z-index: 9999;
+  width: 200px; /* Adjust the width as needed */
+  overflow-y: auto;
+  right: 0;
+  top: 100%
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+#menu-button:hover #settings-dropdown {
+  display: block;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.setting-item input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.setting-item input[type="checkbox"]:checked {
+  background-color: #555;
+}
+
+.setting-item input[type="checkbox"]:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(14px);
+}
+
+.setting-item input[type="checkbox"]:not(:checked):after {
+  transform: translateX(0);
+}
+
+.setting-item label {
+  font-size: 14px;
+  color: white;
+  margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+

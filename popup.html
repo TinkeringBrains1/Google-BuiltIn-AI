@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Origin Trial Token -->
+  <meta http-equiv="origin-trial" content="At5afRe6AJJPUzOd04mEJPuJYBY4Ino/xYWH0l289VyoqRz7huNc9AuUZZyk3WkwU1GF/WlLR5XOeGqqaW9hkQgAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vY29pbmtmZGZqb2lqYW1obm5nbG1kZWdnZmhsY2puYW8iLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9">
+
+  <title>SmartChromeAI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header>
+    <h1>SmartChromeAI</h1>
+    <button id="new-chat-button">
+      <img src="new-chat-icon.png" alt="New Chat">
+    </button>
+    <button id="menu-button">
+      <img src="menu-burger.png" alt="Menu">
+      <div id="settings-dropdown" class="hidden">
+        <div class="setting-item">
+          <input type="checkbox" id="history-tracker" />
+          <label for="history-tracker">Safe mode</label>
+        </div>
+        <div class="setting-item">
+          <input type="checkbox" id="resource-optimizer" />
+          <label for="resource-optimizer">Anti-virus downloader</label>
+        </div>
+      </div>
+    </button>
+  </header>
+
+  <!-- Initial Screen -->
+  <div id="initial-screen" class="screen">
+    <div class="content">
+      <img src="assistant_6750056.png" alt="Chatbot Icon" class="chatbot-icon">
+      <p class="greeting">Hello! How can I help you, today?</p>
+    </div>
+    <div class="input-container">
+      <input type="text" placeholder="Type your message here..." id="initial-input">
+      <button id="initial-send-button" class="send-icon"> 
+        <img src="send-icon.png" alt="Send">
+      </button>
+    </div>
+  </div>
+
+  <!-- Chat Screen -->
+  <div id="chat-screen" class="screen hidden">
+    <div id="chat-container">
+      <!-- Placeholder for chat messages -->
+    </div>
+    <div class="input-container">
+      <input type="text" id="chat-input" placeholder="Type your message here...">
+      <button id="send-button" class="send-icon"> 
+        <img src="send-icon.png" alt="Send">
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
